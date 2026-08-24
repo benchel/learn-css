@@ -92,8 +92,7 @@ https://github.com/benchel/learn-css/blob/6b207edd762b1da5011f9fd4bf6b5a6d43f579
 
 https://github.com/benchel/learn-css/blob/6b207edd762b1da5011f9fd4bf6b5a6d43f57977/day01/style/selector2.css#L1-L5
 
-특성 선택자
-속성 값으로 조회하여 선택
+특성 선택자<br/>속성 값으로 조회하여 선택
 
 ...로 시작하는 속성값을 갖는 요소 선택
 ```
