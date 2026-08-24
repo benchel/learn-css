@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CSS 관계 속성 선택자 연습</title>
+    <link rel="stylesheet" href="./style/selector2.css"/>
+</head>
+<body>
+    <!-- 자식 선택자 -->
+    <ul class="menu">
+        <li>홈</li>
+        <li>강의
+            <ul><li>HTML</li></ul>
+        </li>
+    </ul>
+
+    <!-- 인접 형제 선택자 -->
+     <section class="sibling_example1">
+        <h2>강의소개</h2>
+        <p>첫 번째 문단</p>
+        <p>두 번째 문단</p>
+     </section>
+
+    <!-- 일반 형제 선택자 -->
+     <section class="sibling_example2">
+        <h2>공지사항</h2>
+        <p>첫 번째 공지</p>
+        <div>중간 콘텐츠</div>
+        <p>두 번째 공지</p>
+     </section>
+
+    <!-- 속성 존재 선택자 -->
+     <input type="email" name="email" placeholder="email" required/>
+     <input type="password" name="pwd" placeholder="password"/>
+
+    <hr/>
+
+    <!-- 속성값 선택자 -->
+    <a href="https://www.mozilla.org/ko/">MDN</a>
+    <a href="./guide.pdf">학습자료</a>
+
+</body>
+</html>

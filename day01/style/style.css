@@ -1,0 +1,145 @@
+h1{
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+.warning{
+    color: red;
+}
+
+#main-header{
+    background-color: hotpink;
+}
+
+#box{
+    background-color: greenyellow;
+}
+
+/* 선택자 조합(자식 선택) */
+
+ul{
+    background-color: orange;
+}
+
+.deep-menu{
+    background-color: green;
+}
+
+.deep-menu > li{
+    background-color: hotpink;
+}
+
+.deep-menu > li > a{
+    color: white;
+}
+
+.deep-menu{
+    background-color: orange;
+    > li {
+        background-color: hotpink;
+        > a {
+            background-color: green;
+        }        
+    }
+}
+
+.sibling h2 ~ p {
+    background-color: orange;
+}
+
+.deep-menu, .sibling, .another{
+    background-color: salmon;
+}
+
+button:not(.primary){
+    background-color: red;
+}
+
+input[type="text"]{
+    border: 1px solid #ccc;
+}
+
+a[target="_blank"]{
+    color: orange;
+}
+.pseudo{
+    width: 200px;
+    /* height: 200px; */
+    background-color: yellow;
+}
+
+.pseudo:hover{
+    background-color: tomato;
+}
+
+/* pseudo 안에 있는 a에 마우스를 올렸을 때 a의 값이 변경됨 
+.pseudo a:hover{
+    color: green;
+}
+*/
+
+/* pseudo에 마우스를 올렸을 때 a의 값이 변경됨 */
+.pseudo:hover > a{
+    color: green;
+}
+
+.pseudo > a{
+    width: 100px;
+    height: 100px;
+    background: greenyellow;
+    display: inline-block;
+    transition:  all 0.5s;
+}
+
+.pseudo:hover > a{
+    transform: translateX(100px);
+}
+
+.pseudo > a:focus{
+    outline: 2px solid blue;
+}
+
+/* .pseudo > ul > li:first-child {
+    background-color: hotpink;
+}
+
+.pseudo > ul > li:nth-child(2) {
+    background-color: azure;
+}
+.pseudo > ul > li:nth-child(3), 
+.pseudo > ul > li:nth-child(6) {
+    background-color: rgb(39, 153, 153);
+} */
+
+.pseudo > ul > li:nth-child(2n) {
+    background-color: azure;
+}
+
+/* 홀수 
+.pseudo > ul > li:nth-child(odd) {
+    background-color: azure;
+}
+*/
+
+/* 짝수
+.pseudo > ul > li:nth-child(even) {
+    background-color: azure;
+}
+ */
+
+.pseudo > ul > li:last-child {
+    background-color: blueviolet;
+}
+
+.pseudo-element > h2{
+    color: orange;
+}
+
+.pseudo-element > h2::before{
+    content: "♥";
+}
+
+.pseudo-element > h2::after{
+    content: "★";
+}

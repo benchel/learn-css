@@ -1,0 +1,6 @@
+.menu > li {color: dodgerblue;}
+.menu > li li{color: black;}
+
+.sibling_example1 > h2 + p{ color:dodgerblue;}
+.sibling_example2 > h2 ~ p{ color:#7c3aed;}
+
