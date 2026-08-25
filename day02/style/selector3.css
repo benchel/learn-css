@@ -1,0 +1,22 @@
+.course-link:hover {
+    color: red;
+}
+
+.apply-button:focus {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #06961a;
+}
+
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.notice{
+    background-color: rgba(245, 162, 53, 0.7);
+}
+
+.notice::before{ content : "※" }
+
+.external::after{ content : "☞" }
