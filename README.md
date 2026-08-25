@@ -127,4 +127,5 @@ selector[attribute*="..."] {
     attribute : value;
   }
 ```
-
+## day02 
+### 2. CSS 속성
