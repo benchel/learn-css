@@ -42,8 +42,6 @@ selector{ /* parent */
 }
 ```
 
-#### 2.1 선택자 명시도
-
 ### 3. 선택자 
 
 클래스
@@ -127,5 +125,9 @@ selector[attribute*="..."] {
     attribute : value;
   }
 ```
+
+### 4 명시도
+인라인 스타일 > id 선택자 >  class, 가상 클래스 > 태그, 가상요소
+
 ## day02 
 ### 2. CSS 속성
