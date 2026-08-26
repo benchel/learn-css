@@ -1,0 +1,66 @@
+body{
+    text-align: center; 
+    background-color: #eee;
+}
+
+@font-face {
+    font-family: 'pretendard';
+    src: url('../assets/font/PretendardVariable.ttf') format("truetype");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+.profile{
+    font-family: "pretendard", sans-serif;
+    font-weight: 300;
+    line-height: 1.5; /* 24px */
+    background-color: white; 
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 720px; 
+    border-radius: 1em;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.profile-image{
+    width: 9rem; 
+    height: 9rem; 
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.profile-title{
+    color: rgb(32, 32, 151); 
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.profile-section > h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:rgba(39,39,140,0.822);
+}
+
+.profile-section > ul {
+    list-style: none; 
+    margin-bottom: 1rem;
+}
+
+.profile-section > ul li{text-align: center;}
+
+.profile-link{
+    display: inline-block;
+    background-color: rgb(18, 109, 201); 
+    border-radius: 0.3rem;
+    padding: 0.7rem 1.2rem;
+    color: white; 
+    text-decoration-line:none;
+    font-weight: bold;
+
+    &:hover, &:focus-visible{
+        background-color: rgb(14, 80, 146);
+    }
+}
