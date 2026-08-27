@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.contain{
+    width: 600px;
+    height: 600px;
+    border: 1px solid gray;
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* 메인축에 대한 정렬 */
+    justify-content: space-between;
+    /* 서브축에 대한 정렬 */
+    align-content: space-between;
+    padding: 10px;
+
+    .item{
+        width: 250px;
+        height: 250px;
+        background-color: dodgerblue;
+        border-radius: 30px;
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
