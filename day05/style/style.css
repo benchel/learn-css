@@ -1,0 +1,31 @@
+.card{
+    overflow: hidden;
+}
+.card-image{
+    transition: all .5s;
+}
+.card:hover .card-image{
+    transform:scale(1,3);
+}
+
+
+.boxes{
+    width: 200px;
+    height: 200px;
+}
+
+.box01{
+    background-color: hotpink;
+    /* transition : property duration 
+    property 애니메이션을 부여야할 속성
+    duration 애니메이션 재생 시간
+    transition-timing-function 애니메이션 가속도
+    */
+    transition: all .5s ease;
+}
+
+.box01:hover{
+    /* margin-left: 100px; */
+    background-color: olive;
+    transform: translate(100px, 100px);
+}
