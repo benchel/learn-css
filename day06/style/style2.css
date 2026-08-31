@@ -1,0 +1,194 @@
+@Layer reset, base, components;
+
+@import url("../../reset.css") layer(reset);
+@import url("./base.css") layer(base);
+@import url("./components.css") layer(components);
+
+
+:root{
+    --primary:dodgerblue;
+    --spacing-4:16px;
+}
+
+textarea {
+    field-sizing: content;
+    min-height: 100x;
+    max-height: 400px;
+}
+
+.progress{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 10px;
+    background-color: red;
+    width: 100vw;
+    z-index: 10;
+    transform-origin: left;
+    animation: progress linear 1s;
+    animation-timeline: scroll();
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+section{
+    height: 100vh;
+
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        animation: reveal linear;
+        animation-timeline: view();
+        animation-range: entry 0% entry 50%;
+    }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.help-button {
+  anchor-name: --help;
+  border-radius: 50%;
+}
+
+.tooltip {
+  position: absolute;
+  position-anchor: --help;
+  position-area: right;
+  margin-left: 10px;
+}
+
+
+
+dialog {
+  opacity: 1;
+  transform: translateY(0);
+
+  transition:
+    opacity 300ms,
+    transform 300ms;
+
+  @starting-style {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+@scope (.card){
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        line-height: 1.2;
+    }
+}
+
+.button{
+  background-color: var(--primary);
+}
+
+
+.option{
+    border: 1px solid gray;
+    padding: 2rem;
+}
+
+.option.active{
+    border: 1px solid red;
+}
+
+.option:has(input:checked) {
+  border-color: blue;
+  background: #eef4ff;
+}
+
+hr{
+    margin: 3rem 0;
+}
+
+.container{
+    border: 1px solid black;
+    .boxes{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+.wrapper{
+    border: 1px solid black;
+    container-type: inline-size;
+    .boxes{
+        width: 200px;
+        height: 200px;
+    }    
+}
+
+.wrapper{
+    border: 1px solid black;
+    /* container-type: inline-size */
+    /* container-name: wrapper; */
+    container : wrapper / inline-size;
+
+    .boxes{
+        width: 200px;
+        height: 200px;
+    }    
+}
+
+.box01{
+    background-color: dodgerblue;
+}
+
+.scroll-container{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 80px;
+}
+
+section {
+    height: calc(100vh);
+    border: 1px solid black;
+    scroll-snap-align: start;
+
+
+    &:nth-child2(2) {
+        background-color: gray;
+    }
+}
+
+
+/* @media (width < 880px) {
+    .wrapper .box01{
+        background-color: hotpink;
+    }
+} */
+
+@container wrapper (width < 880px) {
+    .box01{
+        background-color: hotpink;
+    }
+}
+
+

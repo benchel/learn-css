@@ -1,0 +1,29 @@
+button{
+    cursor: pointer;
+}
+
+#app .card .button{
+    background-color: red;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Pretendard, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
