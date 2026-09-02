@@ -19,7 +19,7 @@
     margin-bottom: 20px;
     position: relative;
     min-height: 400px;
-    background-color: white;
+    background: var.$gradient-red-to-blue;
 
     span{
       position: absolute;
@@ -27,6 +27,7 @@
       top: 50%;
       font-size: 2rem;
       transform: translate(-50%, -50%);
+      font-weight: bold;
     }
   }
 

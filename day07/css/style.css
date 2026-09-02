@@ -1,7 +1,7 @@
 .course-card__content .button {
   border-radius: 8px;
   padding: 8px;
-  background-color: #2563eb;
+  background-color: #6d77e6;
 }
 
 .course-list {
@@ -22,7 +22,7 @@
   margin-bottom: 20px;
   position: relative;
   min-height: 400px;
-  background-color: white;
+  background: linear-gradient(#e66465, #9198e5);
 }
 .course-card .course-card__thumbnail span {
   position: absolute;
@@ -30,6 +30,7 @@
   top: 50%;
   font-size: 2rem;
   transform: translate(-50%, -50%);
+  font-weight: bold;
 }
 .course-card:hover {
   transform: translateY(-4px);
