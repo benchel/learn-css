@@ -1,0 +1,28 @@
+{
+  "name": "learn-css",
+  "version": "1.0.0",
+  "description": "이론 수업과 병행되는 실습 내용을 주로 올립니다.",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch day07/scss:day07/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benchel/learn-css.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "아무개",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/benchel/learn-css/issues"
+  },
+  "homepage": "https://github.com/benchel/learn-css#readme",
+  "devDependencies": {
+    "sass": "^1.103.1"
+  }
+}

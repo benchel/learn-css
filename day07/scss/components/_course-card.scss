@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as var;
+
+
+.course-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap : 10px;
+}
+
+.course-card {
+  padding: var.$spacing-lg;
+  border-radius: var.$radius-lg;
+  background: var.$color-background;
+  transition: 0.3s;
+  flex-grow: 1;
+
+  .course-card__thumbnail{
+    margin-bottom: 20px;
+    position: relative;
+    min-height: 400px;
+    background-color: white;
+
+    span{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: 2rem;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover { transform: translateY(-4px); }
+
+}
+
+.course-card__content{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .course-card__category{
+    font-size: 1em;
+  }
+
+  .course-card__title {
+    font-size: 1.5em;
+    font-weight: bold; 
+    color: var.$color-text;
+  }
+  .course-card__description { 
+    color: var.$color-muted; 
+  }
+
+  .button{
+    text-align: center;
+    color: white;
+    padding: 15px 15px;
+  }
+  
+}
