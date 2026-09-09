@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwind 실습</title>
+    <link rel="stylesheet" href="./dist/output.css"/>
+</head>
+<body>
+
+<article class="aspect-4/5 max-wsm bg-zinc-900">
+    <div class="pl-12 pt-32">
+        <header>
+            <p class="text-red-700 text-base">TAILWIND CSS PRACTICE 01</p>
+            <h1 class="text-white text-4xl font-bold">Movie Card</h1>
+            <p class="text-zinc-300">이미지, 오버레이, absolute positioning, group-hover, transition을 활용해 스트리밍 서비스 스타일의 콘텐츠 카드를 만들어 봅니다.</p>
+        </header>
+        <div class="flex flex-row h-150">
+            <div class="relative w-100 h-150 rounded-2xl group">
+                <img class="absolute inset-0 h-full w-full object-cover overflow-hidden group-hover:scale-110"
+                src="./assets/pokemon_card_movie.png"
+                alt="후드 쓴 사람과 따라큐가 있는 모습"/>
+                <div class="absolute flex-column px-2 py-1">
+                    <div class="relative top-5">
+                        <span class="inline-flex rounded-md text-white bg-red-700 fw-bold  px-2 py-1">TOP 10</span>
+                        <span class="inline-flex rounded-md text-white bg-black fw-bold px-2 py-1">15+</span>
+                    </div>
+                    <div class="relative top-90">
+                        <p class="text-red-700 font-bold">ORIGINAL SERIES</p>
+                        <h1 class="text-white font-bold text-2xl [-webkit-text-stroke:2px_black]">Pokémon: Wild Card</h1>
+                        <span class="text-green-700">99%일치</span>
+                        <span class="text-white">2027</span>
+                        <span class="inline-flex text-black rounded-md inset-ring px-2 py-1">HD</span>
+                        <p class="text-gray-50">포켓몬 카드 게임을 주제로 하는 포켓몬스터 애니메이션 시리즈의 극장판.</p>
+                        <div class="flex flex-row py-2 gap-2 group-hover:opacity-100 group-hover:scale-100 opacity-0 scale-75">
+                            <span class="bg-white text-black px-2 py-1 rounded flex-11/12 text-center">▶ 재생</span>
+                            <span class="text-white inset-ring px-2 py-1 rounded-full flex-1/12">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 group-hover:opacity-100 opacity-0">
+                    <span class="play_btn text-black bg-white inset-ring px-4 py-2 rounded-circle rounded-full text-4xl">▶</span>
+                </div>
+            </div>
+            <div class=""></div>
+        </div>
+    </div>
+</article>
+
+</body>
+</html>
